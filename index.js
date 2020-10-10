@@ -73,7 +73,7 @@ client.on('message', (message) => {
         .setFooter(`Stella BOT ❤️`)
         .setTimestamp()
   
-      embed.addField('공지: ', contents);
+      embed.addField(contents);
   
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
