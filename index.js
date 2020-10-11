@@ -51,7 +51,7 @@ client.on('message', (message) => {
         .setTitle('2020.10.11 패치노트')
         .setColor('#00dcff')
         .addBlankField()
-        .addField('```ui 계선```', '트레킹 수정')
+        .addField('1. ui 계선', '2. 트레킹 수정')
         .setTimestamp()
         .setFooter('Made by KADE', img)
   
