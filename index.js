@@ -55,19 +55,16 @@ client.on('message', (message) => {
         .setFooter('Made by KADE', img)
   
       message.channel.send(embed)
-  }
-  else if(message.content == '!도움') {
+  } else if(message.content == '!백신') {
     let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
     let embed = new Discord.RichEmbed()
-      .setTitle('백신 및 뱅가드 종료')
+      .setTitle('백신 및 뱅가드 끄기')
+      .setURL('https://mega.nz/folder/o1IUFTrS#GPoz0yY0C8bFerxajBZzZA')
       .setColor('#00dcff')
-      .addField('아래 자신이 해당하거나 필요한 것들을 다운 받은 후 실행시켜주세요')
-      .addField('1. 뱅가드 자동종료', 'https://mega.nz/file/F1BSxDBY#AYHLZjf684XXrNP5CZW7eLx5wz_MwRLTm_bcLFILcis')
-      .addField('2. 백신제거', 'https://mega.nz/file/x1AyQBiA#F3X5bS8yqJM-6j6D4szWLgAA7xIhAw2ASV1MZvme9Lg')
-      .addField('3. 디펜더 끄기', 'https://mega.nz/file/Q1JgzZTY#5H9g8_xqVwLc-yFljjlGvHknwLzZVZHQs4s7-F2WW-g')
       .setTimestamp()
       .setFooter('Made by KADE', img)
-  
+
+    message.channel.send(embed)
   } else if(message.content.startsWith('!공지')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
