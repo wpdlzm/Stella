@@ -50,7 +50,7 @@ client.on('message', (message) => {
       let embed = new Discord.RichEmbed()
         .setTitle('2020.10.11 패치노트')
         .setColor('#00dcff')
-        .addField('____________\n','1. UI 수정\n2. 겐지 질풍 수정')
+        .addField('\n','1. UI 수정\n2. 겐지 질풍 수정')
         .setTimestamp()
         .setFooter('Made by KADE', img)
   
