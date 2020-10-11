@@ -30,35 +30,18 @@ client.on('message', (message) => {
       .setTitle('스텔라 파일')
       .setURL('https://mega.nz/file/h0hkEQqT#0Lk1yRABvLjhFbPFULmNH4BaAWi1-M2slUliI6nycx8')
       .setColor('#00dcff')
-      .addBlankField()
       .setTimestamp()
       .setFooter('Made by KADE', img)
 
     message.channel.send(embed)
-  } else if(message.content == '##$SDSADJCVLKAJLDAD') {
-    let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
-    let commandList = [
-      {name: '!help', desc: 'help'},
-      {name: 'ping', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
-      {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
-      {name: '!전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
-      {name: '!청소', desc: '텍스트 지움'},
-      {name: '!초대코드', desc: '해당 채널의 초대 코드 표기'},
-      {name: '!초대코드2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
-    ];
-    let commandStr = '';
+  } else if(message.content == '!원격') {
+    let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
     let embed = new Discord.RichEmbed()
-      .setAuthor('BOT', helpImg)
-      .setColor('#186de6')
-      .setFooter(`BOT ❤️`)
+      .setTitle('원격요청')
+      .setColor('#00dcff')
+      .addField('팀뷰어를 깔고 관리자나 직원에게 문의해주세요', 'https://www.teamviewer.com/')
       .setTimestamp()
-    
-    commandList.forEach(x => {
-      commandStr += `• \`\`${changeCommandStringLength(`${x.name}`)}\`\` : **${x.desc}**\n`;
-    });
-
-    embed.addField('Commands: ', commandStr);
+      .setFooter('Made by KADE', img)
 
     message.channel.send(embed)
   
