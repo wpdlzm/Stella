@@ -26,9 +26,9 @@ client.on('message', (message) => {
 
   if(message.content == '!파일') {
     let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
-    let site = 'https://mega.nz/file/h0hkEQqT#0Lk1yRABvLjhFbPFULmNH4BaAWi1-M2slUliI6nycx8'
     let embed = new Discord.RichEmbed()
-      .setTitle('스텔라 파일', site)
+      .setTitle('스텔라 파일')
+      .setURL('https://mega.nz/file/h0hkEQqT#0Lk1yRABvLjhFbPFULmNH4BaAWi1-M2slUliI6nycx8')
       .setColor('#00dcff')
       .addBlankField()
       .setTimestamp()
