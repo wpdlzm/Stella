@@ -44,6 +44,18 @@ client.on('message', (message) => {
       .setFooter('Made by KADE', img)
 
     message.channel.send(embed)
+
+  } else if(message.content == '!패치') {
+      let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
+      let embed = new Discord.RichEmbed()
+        .setTitle('2020.10.11 패치노트')
+        .setColor('#00dcff')
+        .addBlankField()
+        .addField('ui 계선', '트레킹 수정')
+        .setTimestamp()
+        .setFooter('Made by KADE', img)
+  
+      message.channel.send(embed)
   
   } else if(message.content.startsWith('!공지')) {
     if(checkPermission(message)) return
