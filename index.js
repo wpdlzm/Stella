@@ -24,14 +24,13 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == '!스텔라') {
+  if(message.content == '!파일') {
     let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
+    let site = 'https://mega.nz/file/h0hkEQqT#0Lk1yRABvLjhFbPFULmNH4BaAWi1-M2slUliI6nycx8'
     let embed = new Discord.RichEmbed()
-      .setTitle('스텔라 구동현황')
-      .setThumbnail(img)
+      .setTitle('스텔라 파일', site)
       .setColor('#00dcff')
       .addBlankField()
-      .addField(':white_check_mark:')
       .setTimestamp()
       .setFooter('Made by KADE', img)
 
