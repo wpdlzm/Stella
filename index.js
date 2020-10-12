@@ -28,43 +28,14 @@ client.on('message', (message) => {
     let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
     let embed = new Discord.RichEmbed()
       .setTitle('스텔라 파일')
-      .setURL('https://mega.nz/file/h0hkEQqT#0Lk1yRABvLjhFbPFULmNH4BaAWi1-M2slUliI6nycx8')
+      .setURL('https://mega.nz/folder/kwZTmSQa#MlwUq2yO2_3AAfh1xHnlMQ')
       .setColor('#00dcff')
       .setTimestamp()
       .setFooter('Made by KADE', img)
 
     message.channel.send(embed)
-  } else if(message.content == '!원격') {
-    let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
-    let embed = new Discord.RichEmbed()
-      .setTitle('원격요청')
-      .setColor('#00dcff')
-      .addField('팀뷰어를 깔고 관리자나 직원에게 문의해주세요', 'https://www.teamviewer.com/')
-      .setTimestamp()
-      .setFooter('Made by KADE', img)
-
-    message.channel.send(embed)
-
-  } else if(message.content == '!패치') {
-      let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
-      let embed = new Discord.RichEmbed()
-        .setTitle('2020.10.11 패치노트')
-        .setColor('#00dcff')
-        .addField('1. UI 수정\n2. 겐지 질풍 수정')
-        .setTimestamp()
-        .setFooter('Made by KADE', img)
   
-      message.channel.send(embed)
-  } else if(message.content == '!백신') {
-    let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
-    let embed = new Discord.RichEmbed()
-      .setTitle('백신 및 뱅가드 끄기')
-      .setURL('https://mega.nz/folder/o1IUFTrS#GPoz0yY0C8bFerxajBZzZA')
-      .setColor('#00dcff')
-      .setTimestamp()
-      .setFooter('Made by KADE', img)
-
-    message.channel.send(embed)
+  
   } else if(message.content.startsWith('!공지')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
