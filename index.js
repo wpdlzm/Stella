@@ -27,23 +27,41 @@ client.on('message', (message) => {
   if(message.content == '!파일') {
     let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
     let embed = new Discord.RichEmbed()
-      .setTitle('스텔라 파일')
-      .setURL('https://mega.nz/folder/kwZTmSQa#MlwUq2yO2_3AAfh1xHnlMQ')
+      .setTitle('ICARUS File Download')
+      .setURL('https://mega.nz/folder/t9hiXCqS#f6xu-6jrwXKFWyrdN5bIWw')
       .setColor('#00dcff')
       .setTimestamp()
       .setFooter('Made by KADE', img)
 
     message.channel.send(embed)
+  } else if(message.content == '!원격') {
+      let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
+      let embed = new Discord.RichEmbed()
+        .setTitle('팀뷰어 다운로드')
+        .setURL('https://www.teamviewer.com/ko/')
+        .setColor('#00dcff')
+        .setTimestamp()
+        .setFooter('Made by KADE', img)
   
+      message.channel.send(embed)
+  
+  } else if(message.content == '!카톡') {
+      let img = 'https://cdn.discordapp.com/attachments/764417429333737482/764453271611113472/Stella.png';
+      let embed = new Discord.RichEmbed()
+        .setTitle('카톡아이디 : KADE1004')
+        .setColor('#00dcff')
+        .setTimestamp()
+        .setFooter('Made by KADE', img)
+
+      message.channel.send(embed)
   
   } else if(message.content.startsWith('!공지')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!공지'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of Stella BOT')
+        .setAuthor('ICARUS BOT')
         .setColor('#00dcff')
-        .setFooter(`Stella BOT ❤️`)
         .setTimestamp()
   
       embed.addField(contents);
